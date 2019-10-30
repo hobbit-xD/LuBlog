@@ -10,7 +10,7 @@ Link: </font/LatoLatin-BlackItalic.woff2>; rel=preload; as=font; crossorigin
 Link: </font/LatoLatin-Bold.woff2>; rel=preload; as=font; crossorigin
 Link: </font/LatoLatin-BoldItalic.woff2>; rel=preload; as=font; crossorigin
 Link: </font/LatoLatin-Hairline.woff2>; rel=preload; as=font; crossorigin
-
+Link: </font/LatoLatin-HairlineItalic.woff2>; rel=preload; as=font; crossorigin
 
 Link: </vendor/bootstrap/css/bootstrap.min.css>; rel=preload; as=style; nopush
 Link: </css/latolatinfont.min.css>; rel=preload; as=style; nopush
@@ -39,7 +39,8 @@ Cache-Control: public, max-age=31556926, immutable
 /font/LatoLatin-Hairline.woff2
 Cache-Control: public, max-age=31556926, immutable
 
-
+/font/LatoLatin-HairlineItalic.woff2
+Cache-Control: public, max-age=31556926, immutable
 
 
 /vendor/jquery/jquery.min.js
