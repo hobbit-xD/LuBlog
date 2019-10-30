@@ -2,11 +2,13 @@ baseURL = "https://lublog.it/"
 languageCode = "it"
 defaultContentLanguage = "it"
 title = "LuBlog"
+theme="lublog-theme"
 disableAliases = true
 enableRobotsTXT = true
 canonifyURLs = true
 paginate = 4
-theme="lublog-theme"
+googleAnalytics = "UA-150455711-1"
+disqusShortname = "lublog-site"
 
 
 [permalinks]
