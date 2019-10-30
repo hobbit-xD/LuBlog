@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://lublog.it/"
 languageCode = "it"
 defaultContentLanguage = "it"
 title = "LuBlog"
