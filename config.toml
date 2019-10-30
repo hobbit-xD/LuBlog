@@ -1,0 +1,59 @@
+baseURL = "http://example.org/"
+languageCode = "it"
+defaultContentLanguage = "it"
+title = "LuBlog"
+disableAliases = true
+enableRobotsTXT = true
+canonifyURLs = true
+paginate = 4
+theme="lublog-theme"
+
+
+[permalinks]
+  post = "/:filename/"
+
+[params]
+  author = "LuBlogger"
+  brand = "LuBlog"
+  description = "Lublog è il sito de 'lupodcast'. Qui trovate: gli articoli complementari al podcast, le puntate del podcast e le informazioni di contatto."
+  homeimg = "/img/logo/logo.png"
+ # Sets specific share to appear on posts (default behavior is to appear)
+  socialShareTwitter = true
+  socialShareGoogleplus = false
+  socialShareFacebook = true
+  socialShareReddit = true
+  socialShareLinkedin = false
+  socialShareStumbleupon = false
+  socialSharePinterest = false
+  socialShareEmail = true
+  socialShareTelegram = true
+  socialShareWhats = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = [ "HTML", "RSS", "REDIR", "HEADERS","JSON" ]
+  section = [ "HTML", "RSS"]
+
+[mediaTypes]
+[mediaTypes."text/netlify"]
+  delimiter = ""
+
+[outputFormats]
+  [outputFormats.REDIR]
+    mediatype = "text/netlify"
+    baseName = "_redirects"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.HEADERS]
+    mediatype = "text/netlify"
+    baseName = "_headers"
+    isPlainText = true
+    notAlternative = true

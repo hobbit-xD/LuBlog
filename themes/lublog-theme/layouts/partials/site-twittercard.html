@@ -1,0 +1,8 @@
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title"
+    content="{{ if not .IsHome }}{{with .Title }}{{ . }} &middot; {{ end }}{{ end }}{{ .Site.Title }}" />
+<meta name="twitter:description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
+<meta name="twitter:image"
+    content="{{ if .IsHome }}{{ .Site.Params.homeimg | absURL }}{{ else if .IsPage }}{{ with .Resources.GetMatch "featuredImage" }}{{ .Permalink | absURL }}{{ end }}{{end}}">

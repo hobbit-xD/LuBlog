@@ -1,0 +1,122 @@
+<div class="social-links">
+
+
+    <!-- Google Plus -->
+    {{ if .Site.Params.socialShareGoogleplus | default true}}
+  
+    <a href="//plus.google.com/share?url={{ .Permalink }}" target="_blank" class="share-btn google-plus">
+  
+      <i class="fab fa-google-plus-g"></i>
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- Facebook -->
+    {{ if .Site.Params.socialShareFacebook | default true}}
+  
+  
+    <a href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank"
+      class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+  
+      <i class="fab fa-facebook-f"></i>
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- Twitter -->
+    {{ if .Site.Params.socialShareTwitter | default true}}
+  
+    <a href="//twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Social.twitter }}"
+      target="_blank" class="social-buttons__button social-button social-button--twitter" aria-label="Twitter">
+  
+      <i class="fab fa-twitter"></i>
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- Reddit -->
+    {{ if .Site.Params.socialShareReddit | default true}}
+  
+    <a href="//reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank"
+      class="social-buttons__button social-button social-button--reddit" aria-label="Reddit">
+  
+      <i class="fab fa-reddit-alien"></i>
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- LinkedIn -->
+    {{ if .Site.Params.socialShareLinkedin | default true}}
+  
+    <a href="//www.linkedin.com/shareArticle?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank"
+      class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+  
+      <i class="fab fa-linkedin"></i>
+  
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- StumbleUpon -->
+    {{ if .Site.Params.socialShareStumbleupon | default true}}
+  
+    <a href="//www.stumbleupon.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank"
+      class="share-btn stumbleupon">
+  
+      <i class="fab fa-stumbleupon"></i>
+  
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- Pintrest -->
+    {{ if .Site.Params.socialSharePinterest | default true}}
+  
+    <a href="//www.pinterest.com/pin/create/button/?url={{ .Permalink }}&amp;description={{ .Title }}" target="_blank"
+      class="share-btn pinterest">
+  
+      <i class="fab fa-pinterest-p"></i>
+  
+    </a>
+  
+    {{ end }}
+  
+    <!-- Telegram -->
+    {{ if .Site.Params.socialShareTelegram | default true}}
+  
+    <a href="https://telegram.me/share/url?text={{ .Title }}&amp;url={{ .Permalink }}" target="_blank"
+      class="social-buttons__button social-button social-button--telegram" aria-label="Telegram">
+  
+      <i class="fab fa-telegram-plane"></i>
+  
+    </a>
+    {{ end }}
+  
+    <!-- Whatsapp -->
+    {{ if .Site.Params.socialShareWhats | default true}}
+  
+    <a href="whatsapp://send?text={{ .Permalink }}" target="_blank"
+      class="social-buttons__button social-button social-button--whats" aria-label="WhatsApp">
+  
+      <i class="fab fa-whatsapp"></i>
+  
+    </a>
+    {{ end }}
+  
+    <!-- Email -->
+    {{ if .Site.Params.socialShareEmail | default true}}
+  
+    <a href="mailto:?subject=Check out this post by {{ .Params.author }}&amp;body={{ .Permalink }}" target="_blank"
+      class="social-buttons__button social-button social-button--mail" aria-label="Email">
+  
+      <i class="far fa-envelope"></i>
+  
+    </a>
+    {{ end }}
+  </div>
