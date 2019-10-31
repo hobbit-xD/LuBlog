@@ -2,9 +2,9 @@
 
 {{ $corejs := resources.Get "js/core.js" | minify }}
 <script src="{{ $corejs.Permalink }}"></script>
-
+<!--
 {{ $js0 := resources.Get "vendor/jquery/jquery.min.js" }}
 <script src="{{ $js0.Permalink }}"></script>
-
+-->
 {{ $js2 := resources.Get "js/main.js" | minify }}
 <script src="{{ $js2.Permalink }}"></script>

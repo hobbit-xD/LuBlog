@@ -12,7 +12,6 @@ Link: </font/LatoLatin-BoldItalic.woff2>; rel=preload; as=font; crossorigin
 Link: </font/LatoLatin-Hairline.woff2>; rel=preload; as=font; crossorigin
 Link: </font/LatoLatin-HairlineItalic.woff2>; rel=preload; as=font; crossorigin
 
-Link: <vendor/bootstrap/css/bootstrap.min.css>; rel=preload; as=style; nopush
 Link: <css/latolatinfont.min.css>; rel=preload; as=style; nopush
 Link: <css/override.min.css>; rel=preload; as=style; nopush
 Link: <css/style.min.css>; rel=preload; as=style; nopush
@@ -20,8 +19,6 @@ Link: <css/xcode.min.css>; rel=preload; as=style; nopush
 
 Link: </js/main.min.js>; rel=preload; as=script; nopush
 Link: </js/core.min.js>; rel=preload; as=script; nopush
-Link: </vendor/bootstrap/js/bootstrap.bundle.min.js>; rel=preload; as=script; nopush
-Link: </vendor/jquery/jquery.min.js>; rel=preload; as=script; nopush
 
 
 /font/LatoLatin-Black.woff2
