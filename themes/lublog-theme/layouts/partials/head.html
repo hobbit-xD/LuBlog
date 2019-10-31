@@ -17,11 +17,11 @@
 {{ $style := slice $xcodeStyle $fontStyle $mainStyle $overrideStyle | resources.Concat "css/concated.css" | minify }}
 <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" media="screen" >
 
-<!--
+
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
--->
+
 
 {{ template "_internal/google_analytics.html" . }}
 {{ if isset $.Site.Params "bgimg" -}}
