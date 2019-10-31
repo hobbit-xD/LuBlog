@@ -2,7 +2,7 @@
     <a href="{{ .Site.BaseURL }}" class="nav-text">
       {{- if isset $.Site.Params "homeimg"}}
         <!--{{- $.Site.Params.brand -}}-->
-        <img src="{{ $.Site.Params.homeimg | absURL }}" class="nav-header">
+        <img src="{{ $.Site.Params.homeimg | absURL }}" class="nav-header" alt="LuBlog-logo-image">
       {{ else }}
         {{- $.Site.Title -}}
       {{ end -}}
