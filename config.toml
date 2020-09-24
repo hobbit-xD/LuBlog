@@ -1,4 +1,4 @@
-baseURL = "https://lublog.it/"
+baseURL = "https://lublog.netlify.app/"
 languageCode = "it"
 defaultContentLanguage = "it"
 title = "LuBlog"
